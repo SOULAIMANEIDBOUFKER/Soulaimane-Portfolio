@@ -1,7 +1,4 @@
-/**
- * Theme context for dark/light mode
- * Senior note: Uses system preference as default, persists in localStorage
- */
+// src/context/ThemeContext.tsx
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 type Theme = 'dark' | 'light';
@@ -14,17 +11,19 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(() => {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark' || saved === 'light') return saved;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  });
+
+  const [theme, setTheme] = useState<Theme>('dark');
 
   useEffect(() => {
     const root = document.documentElement;
-    root.classList.remove('dark', 'light');
-    root.classList.add(theme);
-    localStorage.setItem('theme', theme);
+    root.classList.remove('light');
+    root.classList.add('dark');
+    
+    localStorage.removeItem('theme');
+    
+  
+    document.body.classList.add('dark');
+    document.body.classList.remove('light');
   }, [theme]);
 
   const toggleTheme = () => {
