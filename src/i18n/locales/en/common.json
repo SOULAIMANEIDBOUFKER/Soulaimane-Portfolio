@@ -1,0 +1,81 @@
+
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "certificates": "Certificates",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "cta": "View My Work",
+    "download_cv": "Download CV"
+  },
+  "about": {
+    "title": "About Me",
+    "watch_video": "Watch my introduction video"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies I work with"
+  },
+  "certificates": {
+    "title": "Certificates & Education",
+    "subtitle": "Professional training and qualifications",
+    "search_placeholder": "Search certificates...",
+    "view_pdf": "View Certificate",
+    "view_certificate": "View Certificate",
+    "download": "Download",
+    "modules": "modules",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "issued_by": "Issued by",
+    "date": "Date",
+    "show_certificates": "Show Certificates",
+    "hide_certificates": "Hide Certificates",
+    "certificates_available": "certificates available",
+    "program_completed": "Program Completed",
+    "successfully_completed": "Successfully completed all certificates",
+    "verified": "Verified",
+    "professional_certificates": "Professional Certificates",
+    "education_language": "Education & Language",
+    "program_description": "Complete certification program with {count} modules"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some things I've built",
+    "view_code": "View Code",
+    "view_live": "Live Demo"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "I'm actively seeking an apprenticeship opportunity",
+    "cta_text": "Get in Touch",
+    "or": "or reach out via",
+    "download_cv": "Download Lebenslauf"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "built_with": "Built with"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "toggle": "Change language",
+    "en": "English",
+    "de": "German"
+  },
+  "pdf_modal": {
+    "close": "Close",
+    "download": "Download",
+    "print": "Print",
+    "previous": "Previous page",
+    "next": "Next page",
+    "page": "Page",
+    "of": "of"
+  }
+}

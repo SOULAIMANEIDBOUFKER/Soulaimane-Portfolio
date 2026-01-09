@@ -1,0 +1,394 @@
+{
+  "candidate": {
+    "name": "Soulaimane Id boufker",
+    "role": {
+      "de": "Full-Stack Entwickler",
+      "en": "Full-Stack Developer"
+    },
+    "photo": "/images/photo-soulaimane.jpg",
+    "youtube_about": "https://youtu.be/Fb_BPXctg5w",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind CSS",
+      "React",
+      "Next.js",
+      "Three.js",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Mongoose",
+      "Git",
+      "GitHub",
+      "Docker",
+      "Python"
+    ],
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/soulaimane-idboufker-92aab92aa",
+      "email": "soulaimane.dev@gmail.com",
+      "phone": "+212684291263",
+      "whatsapp": "https://wa.me/212684291263?text=Hallo%20Soulaimane%2C%20ich%20bin%20an%20deinem%20Portfolio%20interessiert",
+      "github": "https://github.com/SOULAIMANEIDBOUFKER"
+    },
+    "downloadables": {
+      "lebenslauf_pdf": "/pdfs/Lebenslauf_Soulaimane.pdf"
+    }
+  },
+  "certificate_groups": [
+    {
+      "id": "meta-frontend",
+      "title_de": "Meta Front-End Developer",
+      "title_en": "Meta Front-End Developer",
+      "issuer": "Coursera · Meta",
+      "description_de": "Vollständige Front-End Entwicklung Zertifizierung von Meta mit 7 Modulen",
+      "description_en": "Complete Front-End Development certification from Meta with 7 modules",
+      "modules": [
+        {
+          "id": "meta-intro-frontend",
+          "title_de": "Einführung in die Front-End-Entwicklung",
+          "title_en": "Introduction to Front-End Development",
+          "issuer": "Meta",
+          "date": "2024-03",
+          "pdf": "/pdfs/meta-intro-frontend.pdf",
+          "thumbnail": "/images/meta-intro-frontend.jpg",
+          "short_de": "Grundlagen der Webentwicklung und Frontend-Technologien",
+          "short_en": "Fundamentals of web development and frontend technologies"
+        },
+        {
+          "id": "meta-javascript",
+          "title_de": "Programmieren mit JavaScript",
+          "title_en": "Programming with JavaScript",
+          "issuer": "Meta",
+          "date": "2024-04",
+          "pdf": "/pdfs/meta-javascript.pdf",
+          "thumbnail": "/images/meta-javascript.jpg",
+          "short_de": "JavaScript-Grundlagen, ES6+ Features und moderne Programmierung",
+          "short_en": "JavaScript fundamentals, ES6+ features and modern programming"
+        },
+        {
+          "id": "meta-version-control",
+          "title_de": "Versionskontrolle",
+          "title_en": "Version Control",
+          "issuer": "Meta",
+          "date": "2024-04",
+          "pdf": "/pdfs/meta-version-control.pdf",
+          "thumbnail": "/images/meta-version-control.jpg",
+          "short_de": "Git, GitHub und kollaborative Entwicklung",
+          "short_en": "Git, GitHub and collaborative development"
+        },
+        {
+          "id": "meta-html-css-depth",
+          "title_de": "HTML und CSS vertieft",
+          "title_en": "HTML and CSS in depth",
+          "issuer": "Meta",
+          "date": "2024-05",
+          "pdf": "/pdfs/meta-html-css-depth.pdf",
+          "thumbnail": "/images/meta-html-css-depth.jpg",
+          "short_de": "Fortgeschrittene HTML5- und CSS3-Techniken",
+          "short_en": "Advanced HTML5 and CSS3 techniques"
+        },
+        {
+          "id": "meta-react-basics",
+          "title_de": "React Grundlagen",
+          "title_en": "React Basics",
+          "issuer": "Meta",
+          "date": "2024-06",
+          "pdf": "/pdfs/meta-react-basics.pdf",
+          "thumbnail": "/images/meta-react-basics.jpg",
+          "short_de": "React-Komponenten, Hooks und State Management",
+          "short_en": "React components, hooks and state management"
+        },
+        {
+          "id": "meta-react-advanced",
+          "title_de": "Fortgeschrittenes React",
+          "title_en": "Advanced React",
+          "issuer": "Meta",
+          "date": "2024-07",
+          "pdf": "/pdfs/meta-react-advanced.pdf",
+          "thumbnail": "/images/meta-react-advanced.jpg",
+          "short_de": "Performance-Optimierung, Patterns und fortgeschrittene Konzepte",
+          "short_en": "Performance optimization, patterns and advanced concepts"
+        },
+        {
+          "id": "meta-ux-ui",
+          "title_de": "Prinzipien des UX/UI-Designs",
+          "title_en": "Principles of UX/UI Design",
+          "issuer": "Meta",
+          "date": "2024-08",
+          "pdf": "/pdfs/meta-ux-ui.pdf",
+          "thumbnail": "/images/meta-ux-ui.jpg",
+          "short_de": "User Experience Design, Interface-Gestaltung und Usability",
+          "short_en": "User experience design, interface design and usability"
+        }
+      ]
+    },
+    {
+      "id": "ibm-fullstack",
+      "title_de": "IBM Full Stack Software Developer Professional Certificate",
+      "title_en": "IBM Full Stack Software Developer Professional Certificate",
+      "issuer": "Coursera · IBM",
+      "description_de": "Umfassende Full-Stack Entwicklung Zertifizierung von IBM mit 11 Modulen",
+      "description_en": "Comprehensive Full-Stack Development certification from IBM with 11 modules",
+      "modules": [
+        {
+          "id": "ibm-intro-se",
+          "title_de": "Einführung in Software Engineering",
+          "title_en": "Introduction to Software Engineering",
+          "issuer": "IBM",
+          "date": "2024-01",
+          "pdf": "/pdfs/ibm-intro-se.pdf",
+          "thumbnail": "/images/ibm-intro-se.jpg",
+          "short_de": "SDLC, Agile und professionelle Entwicklungspraktiken",
+          "short_en": "SDLC, Agile and professional development practices"
+        },
+        {
+          "id": "ibm-cloud",
+          "title_de": "Einführung in Cloud Computing",
+          "title_en": "Introduction to Cloud Computing",
+          "issuer": "IBM",
+          "date": "2024-02",
+          "pdf": "/pdfs/ibm-cloud.pdf",
+          "thumbnail": "/images/ibm-cloud.jpg",
+          "short_de": "Cloud-Architekturen, Services und Deployment-Modelle",
+          "short_en": "Cloud architectures, services and deployment models"
+        },
+        {
+          "id": "ibm-html-css-js",
+          "title_de": "Einführung in HTML, CSS & JavaScript",
+          "title_en": "Introduction to HTML, CSS, & JavaScript",
+          "issuer": "IBM",
+          "date": "2024-02",
+          "pdf": "/pdfs/ibm-html-css-js.pdf",
+          "thumbnail": "/images/ibm-html-css-js.jpg",
+          "short_de": "Webentwicklung-Grundlagen und interaktive Websites",
+          "short_en": "Web development fundamentals and interactive websites"
+        },
+        {
+          "id": "ibm-git-github",
+          "title_de": "Erste Schritte mit Git und GitHub",
+          "title_en": "Getting Started with Git and GitHub",
+          "issuer": "IBM",
+          "date": "2024-03",
+          "pdf": "/pdfs/ibm-git-github.pdf",
+          "thumbnail": "/images/ibm-git-github.jpg",
+          "short_de": "Versionskontrolle, Branching und Collaboration",
+          "short_en": "Version control, branching and collaboration"
+        },
+        {
+          "id": "ibm-react",
+          "title_de": "Entwicklung von Front-End-Apps mit React",
+          "title_en": "Developing Front-End Apps with React",
+          "issuer": "IBM",
+          "date": "2024-04",
+          "pdf": "/pdfs/ibm-react.pdf",
+          "thumbnail": "/images/ibm-react.jpg",
+          "short_de": "React-Entwicklung, Redux und moderne Frontend-Architekturen",
+          "short_en": "React development, Redux and modern frontend architectures"
+        },
+        {
+          "id": "ibm-nodejs",
+          "title_de": "Entwicklung von Back-End-Apps mit Node.js und Express",
+          "title_en": "Developing Back-End Apps with Node.js and Express",
+          "issuer": "IBM",
+          "date": "2024-05",
+          "pdf": "/pdfs/ibm-nodejs.pdf",
+          "thumbnail": "/images/ibm-nodejs.jpg",
+          "short_de": "Server-Entwicklung, REST APIs und Middleware",
+          "short_en": "Server development, REST APIs and middleware"
+        },
+        {
+          "id": "ibm-python",
+          "title_de": "Python für Data Science, AI & Development",
+          "title_en": "Python for Data Science, AI & Development",
+          "issuer": "IBM",
+          "date": "2024-06",
+          "pdf": "/pdfs/ibm-python.pdf",
+          "thumbnail": "/images/ibm-python.jpg",
+          "short_de": "Python-Programmierung, Datenanalyse und ML-Grundlagen",
+          "short_en": "Python programming, data analysis and ML fundamentals"
+        },
+        {
+          "id": "ibm-django-sql",
+          "title_de": "Django-Anwendungsentwicklung mit SQL und Datenbanken",
+          "title_en": "Django Application Development with SQL and Databases",
+          "issuer": "IBM",
+          "date": "2024-07",
+          "pdf": "/pdfs/django-sql.pdf",
+          "thumbnail": "/images/django-sql.jpg",
+          "short_de": "Django Framework, ORM und Datenbankdesign",
+          "short_en": "Django framework, ORM and database design"
+        },
+        {
+          "id": "ibm-capstone",
+          "title_de": "Full Stack Application Development Capstone Project",
+          "title_en": "Full Stack Application Development Capstone Project",
+          "issuer": "IBM",
+          "date": "2024-07",
+          "pdf": "/pdfs/ibm-capstone.pdf",
+          "thumbnail": "/images/ibm-capstone.jpg",
+          "short_de": "Praxisprojekt: Ende-zu-Ende Full-Stack-Anwendung",
+          "short_en": "Hands-on project: End-to-end full-stack application"
+        },
+        {
+          "id": "ibm-microservices",
+          "title_de": "Anwendungsentwicklung mit Microservices und Serverless",
+          "title_en": "Application Development using Microservices and Serverless",
+          "issuer": "IBM",
+          "date": "2024-08",
+          "pdf": "/pdfs/ibm-microservices.pdf",
+          "thumbnail": "/images/ibm-microservices.jpg",
+          "short_de": "Microservice-Architekturen und serverlose Funktionen",
+          "short_en": "Microservice architectures and serverless functions"
+        },
+        {
+          "id": "ibm-containers",
+          "title_de": "Einführung in Container mit Docker, Kubernetes & OpenShift",
+          "title_en": "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+          "issuer": "IBM",
+          "date": "2024-09",
+          "pdf": "/pdfs/ibm-containers.pdf",
+          "thumbnail": "/images/ibm-containers.jpg",
+          "short_de": "Containerisierung, Orchestrierung und DevOps",
+          "short_en": "Containerization, orchestration and DevOps"
+        }
+      ]
+    }
+  ],
+  "standalone_certificates": [
+    {
+      "id": "ai-flask",
+      "title_de": "Entwicklung von KI-Anwendungen mit Python und Flask",
+      "title_en": "Developing AI Applications with Python and Flask",
+      "issuer": "IBM",
+      "date": "2024-06",
+      "pdf": "/pdfs/ai-flask.pdf",
+      "thumbnail": "/images/ai-flask.jpg",
+      "short_de": "KI-Integration in Webanwendungen mit Flask",
+      "short_en": "AI integration in web applications with Flask",
+      "type": "Professional"
+    },
+    {
+      "id": "ibm-backend-nodejs",
+      "title_de": "Backend Development with Node.js",
+      "title_en": "Backend Development with Node.js",
+      "issuer": "IBM",
+      "date": "2024-05",
+      "pdf": "/pdfs/ibm-backend-nodejs.pdf",
+      "thumbnail": "/images/ibm-backend-nodejs.jpg",
+      "short_de": "Server-Entwicklung mit Node.js und Express.js",
+      "short_en": "Server development with Node.js and Express.js",
+      "type": "Professional"
+    },
+    {
+      "id": "ibm-cloud-computing",
+      "title_de": "Cloud Computing Basics",
+      "title_en": "Cloud Computing Basics",
+      "issuer": "IBM",
+      "date": "2024-02",
+      "pdf": "/pdfs/ibm-cloud-computing.pdf",
+      "thumbnail": "/images/ibm-cloud-computing.jpg",
+      "short_de": "Grundlagen des Cloud Computing und Cloud-Services",
+      "short_en": "Cloud computing fundamentals and cloud services",
+      "type": "Professional"
+    },
+    {
+      "id": "bac",
+      "title_de": "Baccalauréat (Abitur)",
+      "title_en": "Baccalaureate",
+      "issuer": "Moroccan Ministry of Education",
+      "date": "2022-06",
+      "pdf": "/pdfs/bac.pdf",
+      "thumbnail": "/images/bac.jpg",
+      "short_de": "Allgemeine Hochschulreife, Schwerpunkt Naturwissenschaften",
+      "short_en": "High school diploma with focus on sciences",
+      "type": "Education"
+    },
+    {
+      "id": "german-b2",
+      "title_de": "Deutsch Sprache – B2",
+      "title_en": "German Language – B2",
+      "issuer": "TELC · Goethe",
+      "date": "2024-03",
+      "pdf": "/pdfs/german-b2.pdf",
+      "thumbnail": "/images/german-b2.jpg",
+      "short_de": "Deutschkenntnisse auf B2-Niveau (TELC & Goethe Institut)",
+      "short_en": "German language proficiency at B2 level (TELC & Goethe Institute)",
+      "type": "Language"
+    }
+  ],
+  "projects": [
+    {
+      "id": "ecommerce",
+      "title": "E-commerce Platform",
+      "short_description": {
+        "de": "Full-Stack E-Commerce-Plattform mit Produktverwaltung, Warenkorb und Zahlungsintegration",
+        "en": "Full-stack e-commerce platform with product management, cart and payment integration"
+      },
+      "tech_tags": ["React", "Node.js", "Express", "MongoDB", "Stripe"],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/ecommerce-platform",
+      "live_url": "https://ecommerce-demo.example.com",
+      "screenshot": "/images/project-ecommerce.jpg"
+    },
+    {
+      "id": "task-manager",
+      "title": "Task Management System",
+      "short_description": {
+        "de": "Kollaboratives Task-Management-Tool mit Echtzeit-Updates und Team-Features",
+        "en": "Collaborative task management tool with real-time updates and team features"
+      },
+      "tech_tags": ["React", "Next.js", "MongoDB", "Socket.io", "Tailwind"],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/task-manager",
+      "live_url": "https://tasks-demo.example.com",
+      "screenshot": "/images/project-taskmanager.jpg"
+    },
+    {
+      "id": "finance-tracker",
+      "title": "Personal Finance Tracker",
+      "short_description": {
+        "de": "Finanz-Management-App mit Budget-Tracking, Ausgabenkategorien und Analysen",
+        "en": "Finance management app with budget tracking, expense categories and analytics"
+      },
+      "tech_tags": ["React", "Node.js", "PostgreSQL", "Chart.js"],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/finance-tracker",
+      "live_url": "https://finance-demo.example.com",
+      "screenshot": "/images/project-finance.jpg"
+    },
+    {
+      "id": "portfolio",
+      "title": "Portfolio Website",
+      "short_description": {
+        "de": "Modernes, responsives Portfolio mit 3D-Elementen und mehrsprachiger Unterstützung",
+        "en": "Modern, responsive portfolio with 3D elements and multi-language support"
+      },
+      "tech_tags": ["React", "Three.js", "Tailwind", "i18next"],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/portfolio",
+      "live_url": "https://soulaimane-portfolio.example.com",
+      "screenshot": "/images/project-portfolio.jpg"
+    },
+    {
+      "id": "quiz-app",
+      "title": "Quiz App",
+      "short_description": {
+        "de": "Interaktive Quiz-Anwendung mit Kategorien, Timer und Highscore-System",
+        "en": "Interactive quiz application with categories, timer and highscore system"
+      },
+      "tech_tags": ["React", "TypeScript", "Firebase", "Framer Motion"],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/quiz-app",
+      "live_url": "https://quiz-demo.example.com",
+      "screenshot": "/images/project-quiz.jpg"
+    },
+    {
+      "id": "weather-app",
+      "title": "Weather App",
+      "short_description": {
+        "de": "Wetter-App mit Standortdiensten, Vorhersagen und ansprechenden Animationen",
+        "en": "Weather app with location services, forecasts and engaging animations"
+      },
+      "tech_tags": ["React", "OpenWeather API", "Geolocation"],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/weather-app",
+      "live_url": "https://weather-demo.example.com",
+      "screenshot": "/images/project-weather.jpg"
+    }
+  ]
+}

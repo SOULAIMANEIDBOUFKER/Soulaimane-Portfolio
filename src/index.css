@@ -1,0 +1,710 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Professional developer portfolio theme - Light mode */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Primary: Deep blue - professional tech brand */
+    --primary: 220 90% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 90% 70%;
+
+    /* Secondary: Lighter blue for subtle elements */
+    --secondary: 220 25% 95%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent: Purple for highlights and CTAs */
+    --accent: 260 80% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 260 80% 75%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 90% 56%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(220 90% 56% / 0.10), hsl(260 80% 60% / 0.10));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 25% 98%));
+    --shadow-soft: 0 2px 8px hsl(220 20% 10% / 0.05);
+    --shadow-medium: 0 4px 16px hsl(220 20% 10% / 0.10);
+    --shadow-strong: 0 8px 32px hsl(220 20% 10% / 0.15);
+    --shadow-glow: 0 0 24px hsl(220 90% 56% / 0.25);
+    --shadow-glow-strong: 0 0 48px hsl(220 90% 56% / 0.35);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    /* Professional developer portfolio theme - Dark mode */
+    --background: 220 25% 8%;
+    --foreground: 220 15% 95%;
+
+    --card: 220 23% 11%;
+    --card-foreground: 220 15% 95%;
+
+    --popover: 220 23% 11%;
+    --popover-foreground: 220 15% 95%;
+
+    --primary: 220 90% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 90% 75%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 220 15% 90%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 260 80% 65%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 260 80% 80%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 220 90% 60%;
+
+    /* Dark mode custom tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(220 90% 20% / 0.30), hsl(260 80% 25% / 0.30));
+    --gradient-card: linear-gradient(145deg, hsl(220 23% 11%), hsl(220 23% 13%));
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.20);
+    --shadow-medium: 0 4px 16px hsl(0 0% 0% / 0.30);
+    --shadow-strong: 0 8px 32px hsl(0 0% 0% / 0.40);
+    --shadow-glow: 0 0 32px hsl(220 90% 60% / 0.30);
+    --shadow-glow-strong: 0 0 48px hsl(220 90% 60% / 0.40);
+  }
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: color-mix(in srgb, hsl(var(--background)), transparent);
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-glow-strong {
+    box-shadow: var(--shadow-glow-strong);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  .code-accent {
+    @apply font-mono text-sm;
+    color: hsl(var(--primary));
+  }
+
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .hero-canvas {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.04));
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+  }
+
+  .hero-canvas canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+  }
+
+  .hero-info img {
+    object-fit: cover;
+    border-radius: 9999px;
+    box-shadow: var(--shadow-glow);
+  }
+
+  @media (max-width: 640px) {
+    .hero-info h1 {
+      font-size: 2.2rem;
+      line-height: 1.05;
+    }
+
+    .hero-info p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-info h1 {
+      font-size: clamp(2.75rem, 6vw, 4.5rem);
+    }
+  }
+
+  @keyframes float-y {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-float {
+    animation: float-y 2.4s ease-in-out infinite;
+  }
+
+  /* ========================================= */
+  /* 🔹 HERO SECTION ENHANCEMENTS              */
+  /* ========================================= */
+
+  .hero-image-glow {
+    position: relative;
+  }
+  
+  .hero-image-glow::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)));
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.4;
+    z-index: -1;
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+  
+  @keyframes glow-pulse {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(0.95);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.05);
+    }
+  }
+  
+  /* Enhanced loading spinner */
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid hsl(var(--border));
+    border-top: 4px solid hsl(var(--primary));
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Smooth entrance animations */
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ========================================= */
+  /* 🔹 HERO SECTION OPTIMIZATIONS             */
+  /* ========================================= */
+
+  /* Hero section specific utilities */
+  .hero-image-container {
+    position: relative;
+    isolation: isolate;
+  }
+  
+  .hero-image-container::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: conic-gradient(from 0deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary)));
+    border-radius: 50%;
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  
+  .hero-image-container::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: hsl(var(--background));
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Loading states */
+  .model-loading {
+    position: relative;
+    background: linear-gradient(90deg, 
+      hsl(var(--background)) 25%, 
+      hsl(var(--primary)/0.1) 50%, 
+      hsl(var(--background)) 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 1.5s infinite;
+  }
+  
+  @keyframes loading-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  
+  /* Smooth animations */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out forwards;
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  /* ========================================= */
+  /* 🔹 IMAGE POSITION FIXES                   */
+  /* ========================================= */
+
+  /* Fix for profile image positioning */
+  .object-top {
+    object-position: top;
+  }
+  
+  .object-center-top {
+    object-position: center top;
+  }
+  
+  .object-center-face {
+    object-position: 50% 20%; /* Adjust this value to move face down */
+  }
+  
+  /* Alternative positions if needed */
+  .object-center-face-25 {
+    object-position: 50% 25%;
+  }
+  
+  .object-center-face-30 {
+    object-position: 50% 30%;
+  }
+  
+  .object-center-face-35 {
+    object-position: 50% 35%;
+  }
+  
+  /* Manual adjustment classes */
+  .adjust-face-position {
+    position: relative;
+  }
+  
+  .adjust-face-position img {
+    position: relative;
+    top: 10px; /* Adjust this value as needed */
+  }
+  
+  /* ========================================= */
+  /* 🔹 NAVBAR ENHANCEMENTS                    */
+  /* ========================================= */
+
+  /* Active nav item indicator */
+  .nav-item-active {
+    position: relative;
+  }
+  
+  .nav-item-active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: hsl(var(--primary));
+    border-radius: 50%;
+    animation: nav-dot-pulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes nav-dot-pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: translateX(-50%) scale(1.2);
+    }
+  }
+  
+  /* Navbar transition effects */
+  .navbar-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Mobile menu animation */
+  .mobile-menu-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .mobile-menu-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .mobile-menu-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .mobile-menu-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+}
+
+@layer components {
+  .hero-max-w {
+    max-width: 48rem;
+  }
+}
+
+/* ensure the canvas fills card nicely */
+.skill-card-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========================================= */
+/* 🔹 3D TECH ICONS STYLING — Added Section  */
+/* ========================================= */
+
+.tech-card {
+  perspective: 900px;
+}
+
+.tech-icon-wrapper {
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: transform 0.6s ease, box-shadow 0.4s ease, background 0.5s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.tech-card:hover .tech-icon-wrapper {
+  transform: rotateY(15deg) rotateX(10deg) scale(1.08);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(145deg, #232323, #3a3a3a);
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+}
+
+.tech-card:hover .tech-icon {
+  transform: translateY(-6px) rotateY(10deg);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.7)) brightness(1.1);
+}
+
+/* Profile image specific adjustments */
+.profile-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-image-wrapper img {
+  transition: all 0.5s ease;
+  transform-origin: center;
+}
+
+/* For different face positions based on image */
+.profile-image-wrapper.face-position-low img {
+  object-position: center 25% !important;
+}
+
+.profile-image-wrapper.face-position-medium img {
+  object-position: center 30% !important;
+}
+
+.profile-image-wrapper.face-position-high img {
+  object-position: center 20% !important;
+}
+
+/* Test overlay for debugging position */
+.profile-position-debug::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px dashed rgba(255, 0, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Responsive adjustments for very large screens */
+@media (min-width: 1536px) {
+  .hero-section .container {
+    max-width: 1400px;
+  }
+  
+  .hero-info img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero-info img {
+    width: 240px;
+    height: 240px;
+  }
+  
+  .hero-canvas {
+    height: 500px !important;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-info {
+    text-align: center;
+    align-items: center !important;
+  }
+  
+  .hero-info img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .hero-canvas {
+    height: 350px !important;
+    margin-top: 2rem;
+  }
+  
+  .hero-section .flex-col {
+    padding-top: 2rem;
+  }
+  
+  /* Navbar responsive adjustments */
+  nav .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Adjust navbar height on mobile */
+  nav {
+    min-height: 60px;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .hero-section .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .hero-section .flex-col {
+    gap: 3rem;
+  }
+  
+  .hero-info img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .hero-info img {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .hero-info h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .hero-info p {
+    font-size: 1.25rem !important;
+  }
+  
+  .hero-canvas {
+    height: 350px !important;
+    margin-top: 1.5rem;
+  }
+
+  .tech-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Responsive adjustments for face position on mobile */
+  .profile-image-wrapper img {
+    object-position: 50% 25% !important;
+  }
+}
+
+/* Ensure canvas is responsive */
+.hero-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* Ensure navbar stays above hero section */
+nav {
+  z-index: 1000 !important;
+}
+
+/* Fix for when navbar overlaps hero content */
+.hero-section {
+  padding-top: 80px; /* Give space for fixed navbar */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 70px;
+  }
+}

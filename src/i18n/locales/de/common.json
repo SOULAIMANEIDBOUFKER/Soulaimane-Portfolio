@@ -1,0 +1,81 @@
+
+{
+  "nav": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "certificates": "Zertifikate",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "cta": "Meine Arbeit ansehen",
+    "download_cv": "Lebenslauf herunterladen"
+  },
+  "about": {
+    "title": "Über mich",
+    "watch_video": "Sehen Sie sich mein Vorstellungsvideo an"
+  },
+  "skills": {
+    "title": "Technische Fähigkeiten",
+    "subtitle": "Technologien, mit denen ich arbeite"
+  },
+  "certificates": {
+    "title": "Zertifikate & Ausbildung",
+    "subtitle": "Berufliche Weiterbildung und Qualifikationen",
+    "search_placeholder": "Zertifikate suchen...",
+    "view_pdf": "Zertifikat ansehen",
+    "view_certificate": "Zertifikat ansehen",
+    "download": "Herunterladen",
+    "modules": "Module",
+    "expand": "Erweitern",
+    "collapse": "Einklappen",
+    "issued_by": "Ausgestellt von",
+    "date": "Datum",
+    "show_certificates": "Zertifikate anzeigen",
+    "hide_certificates": "Zertifikate ausblenden",
+    "certificates_available": "Zertifikate verfügbar",
+    "program_completed": "Programm abgeschlossen",
+    "successfully_completed": "Alle {count} Zertifikate erfolgreich abgeschlossen",
+    "verified": "Verifiziert",
+    "professional_certificates": "Professionelle Zertifikate",
+    "education_language": "Bildung & Sprache",
+    "program_description": "Vollständiges Zertifizierungsprogramm mit {count} Modulen"
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Einige Dinge, die ich gebaut habe",
+    "view_code": "Code ansehen",
+    "view_live": "Live-Demo"
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Ich suche aktiv nach einer Ausbildungsmöglichkeit",
+    "cta_text": "Kontaktieren Sie mich",
+    "or": "oder erreichen Sie mich über",
+    "download_cv": "Lebenslauf herunterladen"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "built_with": "Erstellt mit"
+  },
+  "theme": {
+    "toggle": "Design wechseln",
+    "light": "Hell",
+    "dark": "Dunkel"
+  },
+  "language": {
+    "toggle": "Sprache ändern",
+    "en": "Englisch",
+    "de": "Deutsch"
+  },
+  "pdf_modal": {
+    "close": "Schließen",
+    "download": "Herunterladen",
+    "print": "Drucken",
+    "previous": "Vorherige Seite",
+    "next": "Nächste Seite",
+    "page": "Seite",
+    "of": "von"
+  }
+}
