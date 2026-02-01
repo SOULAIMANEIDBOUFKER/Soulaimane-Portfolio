@@ -1,11 +1,7 @@
-/**
- * عنصر شهادة فردي مع نافذة عرض PDF.
- * تخطيط نظيف واحترافي.
- */
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { FileText, Calendar, Award } from 'lucide-react';
+import { FileText, Award, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import PdfModal from './PdfModal';
@@ -24,12 +20,7 @@ const CertItem = ({ module, index }: CertItemProps) => {
   const title = i18n.language === 'de' ? module.title_de : module.title_en;
   const description = i18n.language === 'de' ? module.short_de : module.short_en;
 
-  // تنسيق التاريخ (من YYYY-MM إلى شهر YYYY)
-  const formatDate = (dateStr: string) => {
-    const [year, month] = dateStr.split('-');
-    const date = new Date(parseInt(year), parseInt(month) - 1);
-    return date.toLocaleDateString(i18n.language, { year: 'numeric', month: 'long' });
-  };
+  const isInProgress = (module as any).status === 'in_progress';
 
   return (
     <>
@@ -49,26 +40,35 @@ const CertItem = ({ module, index }: CertItemProps) => {
         <div className="flex-1">
           <div className="flex items-center justify-between mb-2">
             <h4 className="font-semibold text-foreground">{title}</h4>
-            <Badge variant="secondary" className="ml-2">
-              <FileText className="w-3 h-3 mr-1" /> PDF
-            </Badge>
+            {isInProgress ? (
+              <Badge variant="secondary" className="ml-2">
+                <Clock className="w-3 h-3 mr-1" /> {t('certificates.in_progress_badge', 'In progress')}
+              </Badge>
+            ) : (
+              <Badge variant="secondary" className="ml-2">
+                <FileText className="w-3 h-3 mr-1" /> PDF
+              </Badge>
+            )}
           </div>
           <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{description}</p>
           <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
             <div className="flex items-center gap-1">
               <Award className="w-4 h-4" /> {module.issuer}
             </div>
-            <div className="flex items-center gap-1">
-              <Calendar className="w-4 h-4" /> {formatDate(module.date)}
-            </div>
           </div>
-          <Button size="sm" onClick={() => setShowPdf(true)}>
-            {t('certificates.view_pdf')}
-          </Button>
+          {isInProgress ? (
+            <Button size="sm" variant="secondary" disabled>
+              {t('certificates.in_progress', 'In progress')}
+            </Button>
+          ) : (
+            <Button size="sm" onClick={() => setShowPdf(true)}>
+              {t('certificates.view_certificate', t('certificates.view_pdf'))}
+            </Button>
+          )}
         </div>
       </motion.div>
 
-      {showPdf && (
+      {showPdf && !isInProgress && (
         <PdfModal pdfUrl={module.pdf} title={title} onClose={() => setShowPdf(false)} />
       )}
     </>

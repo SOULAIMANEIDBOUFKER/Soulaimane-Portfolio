@@ -24,7 +24,6 @@ const AboutWithYouTube = ({ youtubeUrl }: AboutWithYouTubeProps) => {
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
             {t('about.title')}
           </h2>
-          {/* تم حذف النص الخطأ هنا - description */}
           <p className="text-lg text-muted-foreground mb-12">
             {t('about.watch_video')}
           </p>

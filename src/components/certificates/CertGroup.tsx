@@ -1,7 +1,3 @@
-/**
- * مجموعة شهادات قابلة للتوسع بأسلوب أكورديون.
- * تبدأ مغلقة لعرض نظيف.
- */
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, ChevronUp } from 'lucide-react';
@@ -21,7 +17,6 @@ const CertGroup = ({ group }: CertGroupProps) => {
 
   return (
     <div className="bg-card rounded-lg shadow-soft hover:shadow-medium transition-smooth border border-border">
-      {/* رأس المجموعة */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full flex items-center justify-between p-6 text-left group"
@@ -50,7 +45,6 @@ const CertGroup = ({ group }: CertGroupProps) => {
         )}
       </button>
 
-      {/* الشهادات المتوسعة */}
       <AnimatePresence>
         {isExpanded && (
           <motion.div

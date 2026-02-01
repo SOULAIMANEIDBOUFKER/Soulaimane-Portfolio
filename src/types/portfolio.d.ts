@@ -20,10 +20,9 @@ export interface CertificateGroup {
   issuer: string;
   description_de: string;
   description_en: string;
-  thumbnail?: string; // جعلناها اختيارية
+  thumbnail?: string; 
 }
 
-// إذا كنت تحتاج إلى باقي الأنواع، أضفها هنا أيضًا
 export interface Candidate {
   name: string;
   role: {

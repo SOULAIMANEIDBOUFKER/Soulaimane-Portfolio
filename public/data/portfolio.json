@@ -26,7 +26,7 @@
     ],
     "contact": {
       "linkedin": "https://www.linkedin.com/in/soulaimane-idboufker-92aab92aa",
-      "email": "soulaimane.dev@gmail.com",
+      "email": "soulaimaneidboufker@gmail.com",
       "phone": "+212684291263",
       "whatsapp": "https://wa.me/212684291263?text=Hallo%20Soulaimane%2C%20ich%20bin%20an%20deinem%20Portfolio%20interessiert",
       "github": "https://github.com/SOULAIMANEIDBOUFKER"
@@ -43,6 +43,7 @@
       "issuer": "Coursera · Meta",
       "description_de": "Vollständige Front-End Entwicklung Zertifizierung von Meta mit 7 Modulen",
       "description_en": "Complete Front-End Development certification from Meta with 7 modules",
+      "thumbnail": "/images/meta-frontend.png",
       "modules": [
         {
           "id": "meta-intro-frontend",
@@ -51,7 +52,7 @@
           "issuer": "Meta",
           "date": "2024-03",
           "pdf": "/pdfs/meta-intro-frontend.pdf",
-          "thumbnail": "/images/meta-intro-frontend.jpg",
+          "thumbnail": "/images/meta-intro-frontend.png",
           "short_de": "Grundlagen der Webentwicklung und Frontend-Technologien",
           "short_en": "Fundamentals of web development and frontend technologies"
         },
@@ -62,7 +63,7 @@
           "issuer": "Meta",
           "date": "2024-04",
           "pdf": "/pdfs/meta-javascript.pdf",
-          "thumbnail": "/images/meta-javascript.jpg",
+          "thumbnail": "/images/meta-javascript.png",
           "short_de": "JavaScript-Grundlagen, ES6+ Features und moderne Programmierung",
           "short_en": "JavaScript fundamentals, ES6+ features and modern programming"
         },
@@ -73,7 +74,7 @@
           "issuer": "Meta",
           "date": "2024-04",
           "pdf": "/pdfs/meta-version-control.pdf",
-          "thumbnail": "/images/meta-version-control.jpg",
+          "thumbnail": "/images/meta-version-control.png",
           "short_de": "Git, GitHub und kollaborative Entwicklung",
           "short_en": "Git, GitHub and collaborative development"
         },
@@ -84,7 +85,7 @@
           "issuer": "Meta",
           "date": "2024-05",
           "pdf": "/pdfs/meta-html-css-depth.pdf",
-          "thumbnail": "/images/meta-html-css-depth.jpg",
+          "thumbnail": "/images/meta-html-css-depth.png",
           "short_de": "Fortgeschrittene HTML5- und CSS3-Techniken",
           "short_en": "Advanced HTML5 and CSS3 techniques"
         },
@@ -95,7 +96,7 @@
           "issuer": "Meta",
           "date": "2024-06",
           "pdf": "/pdfs/meta-react-basics.pdf",
-          "thumbnail": "/images/meta-react-basics.jpg",
+          "thumbnail": "/images/meta-react-basics.png",
           "short_de": "React-Komponenten, Hooks und State Management",
           "short_en": "React components, hooks and state management"
         },
@@ -106,7 +107,7 @@
           "issuer": "Meta",
           "date": "2024-07",
           "pdf": "/pdfs/meta-react-advanced.pdf",
-          "thumbnail": "/images/meta-react-advanced.jpg",
+          "thumbnail": "/images/meta-react-advanced.png",
           "short_de": "Performance-Optimierung, Patterns und fortgeschrittene Konzepte",
           "short_en": "Performance optimization, patterns and advanced concepts"
         },
@@ -117,7 +118,7 @@
           "issuer": "Meta",
           "date": "2024-08",
           "pdf": "/pdfs/meta-ux-ui.pdf",
-          "thumbnail": "/images/meta-ux-ui.jpg",
+          "thumbnail": "/images/meta-ux-ui.png",
           "short_de": "User Experience Design, Interface-Gestaltung und Usability",
           "short_en": "User experience design, interface design and usability"
         }
@@ -130,6 +131,7 @@
       "issuer": "Coursera · IBM",
       "description_de": "Umfassende Full-Stack Entwicklung Zertifizierung von IBM mit 11 Modulen",
       "description_en": "Comprehensive Full-Stack Development certification from IBM with 11 modules",
+      "thumbnail": "/images/ibm-fullstack.png",
       "modules": [
         {
           "id": "ibm-intro-se",
@@ -138,7 +140,7 @@
           "issuer": "IBM",
           "date": "2024-01",
           "pdf": "/pdfs/ibm-intro-se.pdf",
-          "thumbnail": "/images/ibm-intro-se.jpg",
+          "thumbnail": "/images/ibm-intro-se.png",
           "short_de": "SDLC, Agile und professionelle Entwicklungspraktiken",
           "short_en": "SDLC, Agile and professional development practices"
         },
@@ -149,7 +151,7 @@
           "issuer": "IBM",
           "date": "2024-02",
           "pdf": "/pdfs/ibm-cloud.pdf",
-          "thumbnail": "/images/ibm-cloud.jpg",
+          "thumbnail": "/images/ibm-cloud.png",
           "short_de": "Cloud-Architekturen, Services und Deployment-Modelle",
           "short_en": "Cloud architectures, services and deployment models"
         },
@@ -160,7 +162,7 @@
           "issuer": "IBM",
           "date": "2024-02",
           "pdf": "/pdfs/ibm-html-css-js.pdf",
-          "thumbnail": "/images/ibm-html-css-js.jpg",
+          "thumbnail": "/images/ibm-html-css-js.png",
           "short_de": "Webentwicklung-Grundlagen und interaktive Websites",
           "short_en": "Web development fundamentals and interactive websites"
         },
@@ -171,7 +173,7 @@
           "issuer": "IBM",
           "date": "2024-03",
           "pdf": "/pdfs/ibm-git-github.pdf",
-          "thumbnail": "/images/ibm-git-github.jpg",
+          "thumbnail": "/images/ibm-git-github.png",
           "short_de": "Versionskontrolle, Branching und Collaboration",
           "short_en": "Version control, branching and collaboration"
         },
@@ -182,7 +184,7 @@
           "issuer": "IBM",
           "date": "2024-04",
           "pdf": "/pdfs/ibm-react.pdf",
-          "thumbnail": "/images/ibm-react.jpg",
+          "thumbnail": "/images/ibm-react.png",
           "short_de": "React-Entwicklung, Redux und moderne Frontend-Architekturen",
           "short_en": "React development, Redux and modern frontend architectures"
         },
@@ -193,7 +195,7 @@
           "issuer": "IBM",
           "date": "2024-05",
           "pdf": "/pdfs/ibm-nodejs.pdf",
-          "thumbnail": "/images/ibm-nodejs.jpg",
+          "thumbnail": "/images/ibm-nodejs.png",
           "short_de": "Server-Entwicklung, REST APIs und Middleware",
           "short_en": "Server development, REST APIs and middleware"
         },
@@ -204,9 +206,10 @@
           "issuer": "IBM",
           "date": "2024-06",
           "pdf": "/pdfs/ibm-python.pdf",
-          "thumbnail": "/images/ibm-python.jpg",
+          "thumbnail": "/images/ibm-python.png",
           "short_de": "Python-Programmierung, Datenanalyse und ML-Grundlagen",
-          "short_en": "Python programming, data analysis and ML fundamentals"
+          "short_en": "Python programming, data analysis and ML fundamentals",
+          "status": "in_progress"
         },
         {
           "id": "ibm-django-sql",
@@ -215,9 +218,10 @@
           "issuer": "IBM",
           "date": "2024-07",
           "pdf": "/pdfs/django-sql.pdf",
-          "thumbnail": "/images/django-sql.jpg",
+          "thumbnail": "/images/django-sql.png",
           "short_de": "Django Framework, ORM und Datenbankdesign",
-          "short_en": "Django framework, ORM and database design"
+          "short_en": "Django framework, ORM and database design",
+          "status": "in_progress"
         },
         {
           "id": "ibm-capstone",
@@ -228,7 +232,8 @@
           "pdf": "/pdfs/ibm-capstone.pdf",
           "thumbnail": "/images/ibm-capstone.jpg",
           "short_de": "Praxisprojekt: Ende-zu-Ende Full-Stack-Anwendung",
-          "short_en": "Hands-on project: End-to-end full-stack application"
+          "short_en": "Hands-on project: End-to-end full-stack application",
+          "status": "in_progress"
         },
         {
           "id": "ibm-microservices",
@@ -239,7 +244,8 @@
           "pdf": "/pdfs/ibm-microservices.pdf",
           "thumbnail": "/images/ibm-microservices.jpg",
           "short_de": "Microservice-Architekturen und serverlose Funktionen",
-          "short_en": "Microservice architectures and serverless functions"
+          "short_en": "Microservice architectures and serverless functions",
+          "status": "in_progress"
         },
         {
           "id": "ibm-containers",
@@ -250,7 +256,8 @@
           "pdf": "/pdfs/ibm-containers.pdf",
           "thumbnail": "/images/ibm-containers.jpg",
           "short_de": "Containerisierung, Orchestrierung und DevOps",
-          "short_en": "Containerization, orchestration and DevOps"
+          "short_en": "Containerization, orchestration and DevOps",
+          "status": "in_progress"
         }
       ]
     }
@@ -306,15 +313,16 @@
     },
     {
       "id": "german-b2",
-      "title_de": "Deutsch Sprache – B2",
-      "title_en": "German Language – B2",
-      "issuer": "TELC · Goethe",
-      "date": "2024-03",
+      "title_de": "Deutsch: B2-Prüfung (gebucht)",
+      "title_en": "German: B2 Exam (Scheduled)",
+      "issuer": "telc",
+      "date": "2026-03",
       "pdf": "/pdfs/german-b2.pdf",
       "thumbnail": "/images/german-b2.jpg",
-      "short_de": "Deutschkenntnisse auf B2-Niveau (TELC & Goethe Institut)",
-      "short_en": "German language proficiency at B2 level (TELC & Goethe Institute)",
-      "type": "Language"
+      "short_de": "B2-Prüfung für Anfang März 2026 gebucht (Zertifikat folgt nach Bestehen).",
+      "short_en": "B2 exam booked for early March 2026 (certificate will follow after passing).",
+      "type": "Language",
+      "status": "in_progress"
     }
   ],
   "projects": [
@@ -325,9 +333,19 @@
         "de": "Full-Stack E-Commerce-Plattform mit Produktverwaltung, Warenkorb und Zahlungsintegration",
         "en": "Full-stack e-commerce platform with product management, cart and payment integration"
       },
-      "tech_tags": ["React", "Node.js", "Express", "MongoDB", "Stripe"],
-      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/ecommerce-platform",
-      "live_url": "https://ecommerce-demo.example.com",
+      "tech_tags": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Stripe",
+        "Tailwind",
+        "Redis",
+        "Cloudinary",
+        "i18n"
+      ],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/SOLA-MARKET-main.git",
+      "live_url": "https://sola-market-main.vercel.app",
       "screenshot": "/images/project-ecommerce.jpg"
     },
     {
@@ -337,9 +355,15 @@
         "de": "Kollaboratives Task-Management-Tool mit Echtzeit-Updates und Team-Features",
         "en": "Collaborative task management tool with real-time updates and team features"
       },
-      "tech_tags": ["React", "Next.js", "MongoDB", "Socket.io", "Tailwind"],
-      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/task-manager",
-      "live_url": "https://tasks-demo.example.com",
+      "tech_tags": [
+        "React",
+        "Next.js",
+        "MongoDB",
+        "Tailwind",
+        "i18n"
+      ],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/TASKSOLA.git",
+      "live_url": "https://tasksola.vercel.app",
       "screenshot": "/images/project-taskmanager.jpg"
     },
     {
@@ -349,9 +373,16 @@
         "de": "Finanz-Management-App mit Budget-Tracking, Ausgabenkategorien und Analysen",
         "en": "Finance management app with budget tracking, expense categories and analytics"
       },
-      "tech_tags": ["React", "Node.js", "PostgreSQL", "Chart.js"],
-      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/finance-tracker",
-      "live_url": "https://finance-demo.example.com",
+      "tech_tags": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Chart.js",
+        "Tailwind",
+        "i18n"
+      ],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/sola-tracker.main-.git",
+      "live_url": "https://sola-tracker-main.vercel.app",
       "screenshot": "/images/project-finance.jpg"
     },
     {
@@ -361,21 +392,33 @@
         "de": "Modernes, responsives Portfolio mit 3D-Elementen und mehrsprachiger Unterstützung",
         "en": "Modern, responsive portfolio with 3D elements and multi-language support"
       },
-      "tech_tags": ["React", "Three.js", "Tailwind", "i18next"],
+      "tech_tags": [
+        "React",
+        "TypeScript",
+        "Three.js",
+        "Tailwind",
+        "i18n"
+      ],
       "github_url": "https://github.com/SOULAIMANEIDBOUFKER/portfolio",
-      "live_url": "https://soulaimane-portfolio.example.com",
       "screenshot": "/images/project-portfolio.jpg"
     },
     {
-      "id": "quiz-app",
-      "title": "Quiz App",
+      "id": "Admin-Suite",
+      "title": "Admin Suite",
       "short_description": {
-        "de": "Interaktive Quiz-Anwendung mit Kategorien, Timer und Highscore-System",
-        "en": "Interactive quiz application with categories, timer and highscore system"
+        "de": "Frontend Ticketing-Admin-Dashboard mit Rollen (RBAC), Charts und EN/DE i18n",
+        "en": "Frontend Ticketing Admin Dashboard with RBAC, Charts & EN/DE i18n"
       },
-      "tech_tags": ["React", "TypeScript", "Firebase", "Framer Motion"],
-      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/quiz-app",
-      "live_url": "https://quiz-demo.example.com",
+      "tech_tags": [
+        "React",
+        "TypeScript",
+        "React Router",
+        "Tailwind",
+        "i18n",
+        "Recharts"
+      ],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/SOLA-ADMIN-SUITE-main.git",
+      "live_url": "https://sola-admin-suite-main.vercel.app",
       "screenshot": "/images/project-quiz.jpg"
     },
     {
@@ -385,9 +428,15 @@
         "de": "Wetter-App mit Standortdiensten, Vorhersagen und ansprechenden Animationen",
         "en": "Weather app with location services, forecasts and engaging animations"
       },
-      "tech_tags": ["React", "OpenWeather API", "Geolocation"],
-      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/weather-app",
-      "live_url": "https://weather-demo.example.com",
+      "tech_tags": [
+        "React",
+        "TypeScript",
+        "OpenWeather API",
+        "Tailwind",
+        "i18n"
+      ],
+      "github_url": "https://github.com/SOULAIMANEIDBOUFKER/Sola-Weather-app.main.git",
+      "live_url": "https://sola-weather-app-main-1f81.vercel.app",
       "screenshot": "/images/project-weather.jpg"
     }
   ]

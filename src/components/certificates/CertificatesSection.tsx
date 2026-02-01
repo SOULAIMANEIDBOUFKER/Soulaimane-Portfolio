@@ -12,7 +12,6 @@ interface CertificatesSectionProps {
 const CertificatesSection = ({ groups, standalone }: CertificatesSectionProps) => {
   const { t } = useTranslation();
 
-  // فصل الشهادات حسب النوع
   const professionalCerts = standalone.filter(cert => cert.type === 'Professional');
   const educationCerts = standalone.filter(cert => 
     cert.type === 'Education' || cert.type === 'Language'
@@ -42,30 +41,12 @@ const CertificatesSection = ({ groups, standalone }: CertificatesSectionProps) =
               <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
             </div>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6">
               {groups.map((group) => (
                 <CertGroup key={group.id} group={group} />
               ))}
             </div>
 
-            {/* Additional Professional Certificates */}
-            {professionalCerts.length > 0 && (
-              <div className="mt-8">
-                <h4 className="text-xl font-semibold mb-4 text-center">
-                  Additional Professional Certificates
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  {professionalCerts.map((cert, index) => (
-                    <CertItem 
-                      key={cert.id} 
-                      module={cert} 
-                      index={index}
-                      variant="compact"
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
 
           {/* Education & Language Section */}
@@ -79,7 +60,7 @@ const CertificatesSection = ({ groups, standalone }: CertificatesSectionProps) =
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-border to-transparent" />
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 {educationCerts.map((cert, index) => (
                   <CertItem 
                     key={cert.id} 

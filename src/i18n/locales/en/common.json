@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "about": "About",
@@ -40,7 +39,9 @@
     "verified": "Verified",
     "professional_certificates": "Professional Certificates",
     "education_language": "Education & Language",
-    "program_description": "Complete certification program with {count} modules"
+    "program_description": "Complete certification program with {count} modules",
+    "in_progress": "In progress",
+    "in_progress_badge": "In progress"
   },
   "projects": {
     "title": "Featured Projects",

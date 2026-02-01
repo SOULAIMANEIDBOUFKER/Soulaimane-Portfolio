@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "about": "Über mich",
@@ -40,7 +39,9 @@
     "verified": "Verifiziert",
     "professional_certificates": "Professionelle Zertifikate",
     "education_language": "Bildung & Sprache",
-    "program_description": "Vollständiges Zertifizierungsprogramm mit {count} Modulen"
+    "program_description": "Vollständiges Zertifizierungsprogramm mit {count} Modulen",
+    "in_progress": "In Bearbeitung",
+    "in_progress_badge": "In Bearbeitung"
   },
   "projects": {
     "title": "Ausgewählte Projekte",

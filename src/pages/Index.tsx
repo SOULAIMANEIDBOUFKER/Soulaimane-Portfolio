@@ -1,7 +1,3 @@
-/**
- * Main portfolio page - composes all sections
- * Senior note: Lazy loads components, fetches data with error handling
- */
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Navbar from '@/components/Navbar';
@@ -12,6 +8,7 @@ import CertificatesSection from '@/components/certificates/CertificatesSection';
 import ProjectsGrid from '@/components/ProjectsGrid';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import WhatsAppFab from '@/components/WhatsAppFab';
 import type { PortfolioData } from '@/types/portfolio';
 
 const Index = () => {
@@ -73,7 +70,6 @@ const Index = () => {
 
         <ProjectsGrid projects={data.projects} />
 
-        {/* تم إزالة قسم Timeline (Experience) هنا */}
 
         <ContactSection
           contact={data.candidate.contact}
@@ -82,6 +78,9 @@ const Index = () => {
       </main>
 
       <Footer />
+
+      {/* Floating WhatsApp button */}
+      <WhatsAppFab href={data.candidate.contact?.whatsapp} />
     </div>
   );
 };

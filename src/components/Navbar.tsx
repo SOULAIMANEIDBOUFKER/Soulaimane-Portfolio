@@ -21,7 +21,7 @@ const Navbar = () => {
       
       // Update active section based on scroll position
       const sections = ['about', 'skills', 'certificates', 'projects', 'contact'];
-      const scrollY = window.scrollY + 100; // تم تغيير scrollPosition إلى scrollY
+      const scrollY = window.scrollY + 100;  
       
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -41,6 +41,16 @@ const Navbar = () => {
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Persist the selected language (simple + reliable)
+  useEffect(() => {
+    const savedLang = localStorage.getItem('lang');
+    if (savedLang && savedLang !== i18n.language) {
+      i18n.changeLanguage(savedLang);
+    }
+  }, [i18n]);
+
+  const currentLang = i18n.language?.startsWith('de') ? 'DE' : 'EN';
 
   const navItems = [
     { key: 'about', href: '#about' },
@@ -66,7 +76,9 @@ const Navbar = () => {
   };
 
   const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === 'en' ? 'de' : 'en');
+    const nextLang = i18n.language?.startsWith('en') ? 'de' : 'en';
+    i18n.changeLanguage(nextLang);
+    localStorage.setItem('lang', nextLang);
   };
 
   return (
@@ -85,8 +97,13 @@ const Navbar = () => {
             onClick={scrollToTop}
             className="flex items-center gap-2 group"
           >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center shadow-glow">
-              <span className="text-lg font-bold text-primary-foreground">SE</span>
+            <div className="w-10 h-10 rounded-full bg-card border border-border overflow-hidden shadow-glow flex items-center justify-center">
+              <img
+                src="/images/meine-logo.png"
+                alt="Soulaimane logo"
+                className="h-full w-full object-contain p-1"
+                loading="eager"
+              />
             </div>
             <span className="text-lg font-bold text-foreground hidden sm:inline-block group-hover:text-primary transition-colors">
               Soulaimane
@@ -129,13 +146,14 @@ const Navbar = () => {
 
             {/* Language toggle button */}
             <Button
-              variant="ghost"
-              size="icon"
+              variant="secondary"
+              size="sm"
               onClick={toggleLanguage}
               aria-label={t('language.toggle')}
-              className="h-9 w-9 rounded-full hover:bg-secondary"
+              className="h-9 rounded-full px-3 gap-2"
             >
               <Globe className="h-4 w-4" />
+              <span className="text-xs font-semibold tracking-wide">{currentLang}</span>
             </Button>
 
             {/* Download CV button - Desktop only */}
@@ -209,13 +227,14 @@ const Navbar = () => {
                   </Button>
                   
                   <Button
-                    variant="ghost"
-                    size="icon"
+                    variant="secondary"
+                    size="sm"
                     onClick={toggleLanguage}
                     aria-label={t('language.toggle')}
-                    className="h-10 w-10 rounded-full"
+                    className="h-10 rounded-full px-4 gap-2"
                   >
                     <Globe className="h-5 w-5" />
+                    <span className="text-sm font-semibold tracking-wide">{currentLang}</span>
                   </Button>
                 </div>
                 
@@ -231,7 +250,7 @@ const Navbar = () => {
               
               {/* Current language indicator */}
               <div className="text-xs text-muted-foreground text-center pt-2">
-                Current language: {i18n.language === 'en' ? 'English' : 'German'}
+                Current language: {currentLang}
               </div>
             </div>
           </div>
