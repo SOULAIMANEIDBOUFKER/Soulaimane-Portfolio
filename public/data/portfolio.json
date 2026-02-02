@@ -13,7 +13,6 @@
       "JavaScript",
       "Tailwind CSS",
       "React",
-      "Next.js",
       "Three.js",
       "Express.js",
       "Node.js",
@@ -21,8 +20,8 @@
       "Mongoose",
       "Git",
       "GitHub",
-      "Docker",
-      "Python"
+      "Docker"
+      
     ],
     "contact": {
       "linkedin": "https://www.linkedin.com/in/soulaimane-idboufker-92aab92aa",
@@ -357,7 +356,7 @@
       },
       "tech_tags": [
         "React",
-        "Next.js",
+        "Node.js",
         "MongoDB",
         "Tailwind",
         "i18n"

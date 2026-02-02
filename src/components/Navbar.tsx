@@ -164,7 +164,7 @@ const Navbar = () => {
               asChild
             >
               <a 
-                href="/cv.pdf" 
+                href="/pdfs/Lebenslauf_Soulaimane.pdf"
                 download
                 className="flex items-center gap-1"
               >
@@ -240,7 +240,7 @@ const Navbar = () => {
                 
                 {/* Mobile Download CV button */}
                 <a 
-                  href="/cv.pdf" 
+                 href="/pdfs/Lebenslauf_Soulaimane.pdf"
                   download
                   className="py-2 px-4 text-sm font-medium rounded-lg border border-primary text-primary hover:bg-primary/10 transition-all duration-200"
                 >

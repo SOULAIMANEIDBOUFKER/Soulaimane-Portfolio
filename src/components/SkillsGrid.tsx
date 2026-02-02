@@ -12,7 +12,6 @@ const techIcons = [
   { name: "JavaScript", src: "/icons/javascript.png" },
   { name: "Tailwind CSS", src: "/icons/tailwind.png" },
   { name: "React", src: "/icons/react.png" },
-  { name: "Next.js", src: "/icons/next.png" },
   { name: "Node.js", src: "/icons/nodejs.png" },
   { name: "Express", src: "/icons/express.png" },
   { name: "MongoDB", src: "/icons/mongodb.png" },
@@ -20,7 +19,6 @@ const techIcons = [
   { name: "Git", src: "/icons/git.png" },
   { name: "GitHub", src: "/icons/github.png" },
   { name: "Docker", src: "/icons/docker.png" },
-  { name: "Python", src: "/icons/python.png" },
   { name: "Three.js", src: "/icons/three.png" },
 ];
 
@@ -32,10 +30,10 @@ const TechIconsGrid = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-            {t('skills.title')}
+            {t("skills.title")}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {t('skills.subtitle')}
+            {t("skills.subtitle")}
           </p>
         </div>
 
